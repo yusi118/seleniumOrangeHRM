@@ -41,7 +41,7 @@ public class HomePage {
 		edit.click();
 		WebDriverWait wait=new WebDriverWait(driver,15);
 		WebElement mensaje=wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("fadable")));
-		if(mensaje.getText().contains("Successfully")) {
+		if(mensaje.getText().contains("Successfully Saved")) {
 			Utils.takeScreenshot();
 			System.out.println("Mensaje es +++++++"+mensaje.getText());
 			System.out.println("editado perfil ");
