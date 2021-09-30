@@ -48,6 +48,8 @@ public class SearchTest {
 		this.expectedResult=expectedResult;
 	}
 	
+	// la parameterized me permite introducir variables al test.
+	// Es lo misma que la carga de datos (excell) de katalon 
 	@Parameterized.Parameters
 	public static Collection searchOptions() {
 		return Arrays.asList(new Object [][]{
