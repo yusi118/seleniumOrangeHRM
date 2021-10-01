@@ -18,7 +18,7 @@ public class LoginPage {
 		this.driver=DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(id="txtUsername")
+	@FindBy(id="txtUsername") 
 	private WebElement  INPUT_USERNAME;
 	
 	@FindBy(id="txtPassword")
